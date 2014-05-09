@@ -1,0 +1,76 @@
+[Gerät]
+Name=Smedby Charger 0.5 proto
+Hersteller=Ola Andersson
+Gruppe=02
+Device_ID=ID_SMEDBY_CHARGER_05
+Used=1
+Abbildung=OpenFormat.jpg
+ChangeSettings=1
+HerstellerLink1=elektronik.smedby.net
+HerstellerLink2=
+LogViewLink=www.logview.info
+TimeStep_ms=1000
+TimeGiven=0
+KanalAnzahl=1
+WerteFormat=ASCII
+Prüfsummenberechnung=none
+PrüfsummenFormat=ASCII
+DateTimeFormat=R_%hh"h" %nn"m" %ss"s"
+AutoStart=1
+AutoOpenToolbox=0
+
+[Stati]
+StatiAnzahl=1
+001=Loggar laddning
+
+[serielle Schnittstelle]
+Port=COM18
+Baudrate=9600
+Datenbits=8
+Stopbits=0
+Parität=0
+Flusskontrolle=0
+ClusterSize=-25
+SetDTR=0
+SetRTS=0
+
+[Schnittstelle TimeOuts]
+RTOCharDelayTime=100
+RTOExtraDelayTime=100
+WTOCharDelayTime=290
+WTOExtraDelayTime=100
+
+[Anzeige Einstellungen Kanal 01]
+Zeitbasis=Zeit
+Einheit=s
+Symbol=t
+## inkl Zeit !!!
+WerteAnzahl=5
+Messgröße1=Battery Voltage
+Einheit1=V
+Symbol1=U
+Faktor1=0.1
+OffsetWert1=0.0
+OffsetSumme1=0.0
+Messgröße2=Current
+Einheit2=A
+Symbol2=I
+Faktor2=0.05
+OffsetWert2=0.0
+OffsetSumme2=0.0
+Messgröße3=Temp
+Einheit3=C
+Symbol3=T
+Faktor3=1.0
+OffsetWert3=0.0
+OffsetSumme3=0.0
+Messgröße4=Input Voltage
+Einheit4=V
+Symbol4=U
+Faktor4=0.1
+OffsetWert4=0.0
+OffsetSumme4=0.0
+
+[Save Check]
+Kanal1=
+
