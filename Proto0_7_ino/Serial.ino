@@ -20,13 +20,13 @@ void SendSerial()
   Serial.print(";");
   Serial.print(BatteryVoltage);
   Serial.print(";");
-  Serial.print(pwm);
-  Serial.print(";");
   Serial.print(BatteryCurrentNorm);
   Serial.print(";");
   Serial.print(BatteryTempNorm);
   Serial.print(";");
   Serial.print(InputVoltage);
+  Serial.print(";");
+  Serial.print(pwm);
   Serial.println(";0");  
   time++;
   

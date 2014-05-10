@@ -15638,7 +15638,7 @@ Grid 5.00 mm&lt;p&gt;
 <part name="C1" library="rcl" deviceset="C-EU" device="050-024X044" value="100n"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="C3" library="rcl" deviceset="C-EU" device="050-024X044" value="100n"/>
-<part name="P+7" library="supply1" deviceset="VCC/2" device=""/>
+<part name="V+X2" library="supply1" deviceset="VCC/2" device=""/>
 <part name="P+11" library="supply1" deviceset="V+" device=""/>
 <part name="Q1" library="transistor-npn" deviceset="BD139*" device=""/>
 <part name="P+12" library="supply1" deviceset="+5V" device=""/>
@@ -15772,7 +15772,7 @@ Grid 5.00 mm&lt;p&gt;
 <instance part="C1" gate="G$1" x="-149.86" y="99.06" rot="R270"/>
 <instance part="GND7" gate="1" x="-114.3" y="83.82"/>
 <instance part="C3" gate="G$1" x="-114.3" y="93.98"/>
-<instance part="P+7" gate="G$1" x="-114.3" y="109.22"/>
+<instance part="V+X2" gate="G$1" x="-114.3" y="109.22"/>
 <instance part="P+11" gate="1" x="-139.7" y="119.38"/>
 <instance part="Q1" gate="G$1" x="35.56" y="33.02"/>
 <instance part="P+12" gate="1" x="-30.48" y="111.76"/>
@@ -16469,7 +16469,7 @@ Grid 5.00 mm&lt;p&gt;
 <pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="-129.54" y1="99.06" x2="-114.3" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="P+7" gate="G$1" pin="VCC/2"/>
+<pinref part="V+X2" gate="G$1" pin="VCC/2"/>
 <wire x1="-114.3" y1="106.68" x2="-114.3" y2="99.06" width="0.1524" layer="91"/>
 <junction x="-114.3" y="99.06"/>
 </segment>

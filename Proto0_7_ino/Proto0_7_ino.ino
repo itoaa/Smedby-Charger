@@ -111,13 +111,13 @@ void loop() {
         BatteryCurrent = map(sensorValue, 0, 1023, 0, 1006);        
         if (BatteryCurrent < I_FAST)    // Increase pwm if current to low
         {
-          if (pwm == 255) { pwm = 254; }  // Battery not connected or input voltage to low.
+          if (pwm > 254) { pwm = 254; }  // Battery not connected or input voltage to low.
           pwm++;
           analogWrite(pwmPin, pwm);
         }
         else if (BatteryCurrent > I_FAST)    // Decrease pwm if current to high
         {
-          if (pwm == 0) { pwm = 1; } // Output shortcut ??
+          if (pwm < 1) { pwm = 1; } // Output shortcut ??
           pwm--;
           analogWrite(pwmPin, pwm);
         } 

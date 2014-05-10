@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -15785,7 +15785,7 @@ Source: http://onsemi.com</description>
 <part name="R34" library="rcl" deviceset="R-EU_" device="0207/2V" value="1k"/>
 <part name="Q3" library="transistor-power" deviceset="BD139" device=""/>
 <part name="Q4" library="transistor-fet" deviceset="IRF9530" device=""/>
-<part name="R10" library="rcl" deviceset="R-EU_" device="0613/5V" value="380"/>
+<part name="R10" library="rcl" deviceset="R-EU_" device="0613/5V" value="1k"/>
 <part name="P+3" library="supply1" deviceset="V+" device=""/>
 <part name="C11" library="rcl" deviceset="CPOL-EU" device="E7.5-18" value="1000u"/>
 <part name="C13" library="rcl" deviceset="C-EU" device="050-024X044" value="100n"/>
@@ -15809,6 +15809,8 @@ Source: http://onsemi.com</description>
 <text x="-27.94" y="-20.32" size="1.778" layer="91">FET Temp Measure</text>
 <text x="-33.02" y="137.16" size="1.778" layer="91">in Voltage Measure 0-66v</text>
 <text x="-76.2" y="104.14" size="1.778" layer="91">V+  +12V</text>
+<text x="101.6" y="-27.94" size="1.778" layer="91">12V Charger
+16-20V in</text>
 </plain>
 <instances>
 <instance part="D6" gate="1" x="-121.92" y="30.48" rot="R180"/>
@@ -16825,4 +16827,10 @@ Source: http://onsemi.com</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

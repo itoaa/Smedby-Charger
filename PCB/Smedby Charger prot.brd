@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1064,7 +1064,7 @@ design rules under a new name.</description>
 <element name="R34" library="rcl" package="0207/2V" value="1k" x="-17.78" y="-128.27"/>
 <element name="Q3" library="transistor-power" package="TO126AV" value="BD139" x="-20.32" y="-99.06"/>
 <element name="Q4" library="transistor-fet" package="TO220" value="IRF9530" x="-43.18" y="-121.92"/>
-<element name="R10" library="rcl" package="P0613V" value="380" x="-15.24" y="-185.42"/>
+<element name="R10" library="rcl" package="P0613V" value="1k" x="-15.24" y="-185.42"/>
 <element name="C11" library="rcl" package="E7,5-18" value="1000u" x="-39.37" y="-165.1"/>
 <element name="C13" library="rcl" package="C050-024X044" value="100n" x="-24.13" y="-185.42"/>
 <element name="L2" library="rcl" package="TJ4-U1" value="150uH" x="-31.75" y="-143.51"/>
