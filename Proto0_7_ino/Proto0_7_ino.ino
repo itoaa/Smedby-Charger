@@ -69,16 +69,19 @@ void setup() {
   // Setup timer to send data on serial every sec
   t1.every(1000,SendSerial);
   
-  // Fill tempBuffer vith 430-value, arround 24degrees
+  // Fill tempBuffer vith real values
    for(int i=0;i<TEMP_BUF_L;i++){
-     tempBuffer[i] = 430;
+     measureTemp();
    }
 
   // Start pwm with xx% Duty
   pinMode(pwmPin, OUTPUT);   // sets the pin as output
   pwm = 0;
   analogWrite(pwmPin, pwm); 
-  setPwmFrequency(9, 1);    // pin,prescaler   pin9 default freq 32k.
+//  Remove comment to set high pwm freq. Standard freq. is 490 of 980 HZ depending on pin.  
+//  setPwmFrequency(9, 1);    // pin,prescaler   pin9 default freq 32k.
+ setPwmFrequency(9, 8);    // pin,prescaler   pin9 default freq 3.9k.
+
 }
 
 
